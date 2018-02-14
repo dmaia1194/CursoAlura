@@ -9,3 +9,7 @@ def gera_nome_convite(convite):
 
 def envia_convite(nome_formatado):
 	print 'Enviando convite para %s' % (nome_formatado)
+
+def processa_convite(convite):
+	nome_formatado = gera_nome_convite(convite)
+	envia_convite(nome_formatado)

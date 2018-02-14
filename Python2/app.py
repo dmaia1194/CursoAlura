@@ -34,9 +34,9 @@ def procurar(nomes):
 
 	nome = raw_input()
 	if nome in nomes:
-		print 'Nome localizado'
+		print 'Nome %s está cadastrado' % (nome)
 	else:
-		print 'Nome não existe'
+		print 'Nome %s não está cadastrado' % (nome)
 
 def menu():
 	nomes = []

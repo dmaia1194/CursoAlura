@@ -29,12 +29,21 @@ def alterar(nomes):
 		posicao = nomes.index(nome)
 		nomes[posicao] = novo_nome
 
+def procurar(nomes):
+	print 'Digite o nome a procurar:'
+
+	nome = raw_input()
+	if nome in nomes:
+		print 'Nome localizado'
+	else:
+		print 'Nome não existe'
+
 def menu():
 	nomes = []
 	escolha = ''
 
 	while escolha != '0':
-		print 'Digite: 1 para cadastrar, 2 para listar, 3 para remover, 4 para alterar, 0 para terminar'
+		print 'Digite: 1 para cadastrar, 2 para listar, 3 para remover, 4 para alterar, 5 para procurar, 0 para terminar'
 
 		escolha = raw_input()
 		if escolha == '1':
@@ -45,5 +54,7 @@ def menu():
 			remover(nomes)
 		if escolha == '4':
 			alterar(nomes)
+		if escolha == '5':
+			procurar(nomes)
 
 menu()

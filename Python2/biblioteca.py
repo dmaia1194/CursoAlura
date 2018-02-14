@@ -13,3 +13,9 @@ def envia_convite(nome_formatado):
 def processa_convite(convite):
 	nome_formatado = gera_nome_convite(convite)
 	envia_convite(nome_formatado)
+
+def cadastrar(nomes):
+	print 'Digite o nome:'
+
+	nome = raw_input()
+	nomes.append(nome)

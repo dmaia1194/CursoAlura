@@ -17,3 +17,9 @@ class Perfil(object):
 
 	def devolve_curtidas(self):
 		return self.__curtidas
+
+class Perfil_Vip(Perfil):
+	'Classe padrão para perfis de usuários VIPs'
+
+	def devolve_creditos(self):
+		return super(Perfil_Vip, self).devolve_curtidas() * 10.0

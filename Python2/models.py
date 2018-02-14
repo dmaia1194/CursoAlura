@@ -7,6 +7,7 @@ class Perfil(object):
 		self.nome = nome
 		self.telefone = telefone
 		self.empresa = empresa
+		self.curtidas = 0
 
 	def imprimir(self):
 		print 'Nome: %s, Telefone: %s, Empresa: %s' % (self.nome, self.telefone, self.empresa)

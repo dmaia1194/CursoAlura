@@ -20,7 +20,6 @@ while(rodada <= total_tentativas):
 	if(acertou):
 		print("Você acertou!")
 	else:
-		print("Você errou!")
 		if(maior):
 			print("O seu chute foi maior que o número secreto!")
 		elif(menor):

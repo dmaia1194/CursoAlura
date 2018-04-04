@@ -1,6 +1,7 @@
 print("*********************************")
 print("Bem vindo ao jogo de Adivinhação!")
 print("*********************************")
+print("Teste")
 
 numero_secreto = 42
 total_tentativas = 3
